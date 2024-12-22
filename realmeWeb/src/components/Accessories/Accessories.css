@@ -1,0 +1,64 @@
+/* Styling for the accessories container */
+.accessories-container {
+  display: flex; /* Align items horizontally */
+  justify-content: flex-start; /* Align to the left */
+  gap: 20px; /* Space between accessories */
+  flex-wrap: wrap; /* Allow wrapping when there's no space */
+  padding: 20px; /* Container padding */
+  box-sizing: border-box;
+}
+
+/* Styling for each accessory */
+.accessory {
+  position: relative;
+  border-radius: 16px;
+  padding: 20px 20px 20px 40px; /* Adjust padding for compact design */
+  width: 646px; /* Fixed width for each accessory */
+  height: 350px; /* Fixed height for each accessory */
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+/* Image Styling */
+.accessory-image {
+  width: 40%; /* Image takes up 40% of the accessory width */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Details Section */
+.accessory-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  width: 50%; 
+}
+
+.accessory-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.accessory-price {
+  font-size: 20px;
+  color: #555;
+}
+
+
+@media (max-width: 768px) {
+  .accessories-container {
+    flex-direction: column; 
+    align-items: center; 
+   }
+
+  .accessory {
+    width: 80%; 
+    margin-bottom: 20px; 
+  }
+}
